@@ -5,9 +5,8 @@ const processLine = (line, processedText = '') => {
   const parts =
     line.match(/^([0-9]*?x?[0-9]*?\)?[A-Z]*)?\(([0-9]*x[0-9]*)\)(.*)$/);
 
-  if (!parts) {
-    return processedText + line;
-  }
+  if (!parts) return processedText + line;
+
   const [ charsToProcess, repetitions ] =
     parts[2].split('x').map(x => parseInt(x));
 
