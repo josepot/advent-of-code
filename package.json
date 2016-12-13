@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "md5": "^2.2.1",
+    "priorityqueuejs": "^1.0.0",
     "ramda": "^0.22.1"
   }
 }
